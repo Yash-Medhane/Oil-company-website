@@ -11,9 +11,9 @@ const Products = () => {
           <div className='bg-white rounded-lg shadow-md overflow-hidden'>
             <img src="./product1.jpeg" alt="Soybean Oil" className='w-full h-60 object-cover' />
             <div className='p-6'>
-              <p className='font-bold text-xl mb-4 text-center text-green-800'>Soybean Oil</p>
+              <p className='font-bold text-xl mb-4 text-center text-green-800'>Soyabean Oil</p>
               <p className='text-gray-700'>
-                Soybean Oil is extracted from high-quality soybeans and is rich in essential fatty acids. It is known for its light flavor and versatility in cooking various cuisines.
+                Soyabean Oil is extracted from high-quality soyabeans and is rich in essential fatty acids. It is known for its light flavor and versatility in cooking various cuisines.
               </p>
             </div>
           </div>

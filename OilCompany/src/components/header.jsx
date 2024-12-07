@@ -20,7 +20,10 @@ const Header = () => {
         {/* Logo and Company Name */}
         <div className='flex items-center gap-3 cursor-pointer' onClick={scrollToTop}>
           <img src="./logo1.png" alt="logo" className='w-20 mix-blend-plus-lighter' />
-          <p className='text-xl font-bold tracking-wide text-white-950 bg-gradient-to-r from-slate-400 to-gray-800 px-2 rounded-2xl py-1'>ASHWA OIL COMPANY</p>
+          <p className="text-base sm:text-xl font-bold tracking-wide text-white bg-gradient-to-r from-slate-400 to-gray-800 px-3 py-2 rounded-lg sm:rounded-2xl text-center">
+  ASHWA OIL COMPANY
+</p>
+
         </div>
 
         {/* Navigation Menu - Large Screens */}
@@ -35,7 +38,7 @@ const Header = () => {
 
         {/* Mobile Menu Icon - Hidden on Large Screens */}
         <div className='lg:hidden'>
-          <FaBars className='text-gray-300 text-3xl cursor-pointer' />
+          <FaBars className='text-gray-300 text-2xl cursor-pointer' />
         </div>
         
       </div>

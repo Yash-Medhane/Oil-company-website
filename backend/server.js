@@ -13,6 +13,10 @@ app.use(cors({
 }));
 app.use(bodyParser.json());
 
+app.get('/',(req,res)=>{
+  res.json("Hello");
+})
+
 app.post('/send', async (req, res) => {
   const { email, message } = req.body;
 
@@ -30,7 +34,17 @@ app.post('/send', async (req, res) => {
     from: 'softwareengineer612@gmail.com', // replace with your email
     to: 'softwareengineer612@gmail.com', // replace with recipient email
     subject: 'Website Contact',
-    text: `Email: ${email}\n\nMessage: ${message}`
+    text:  `
+    New Inquiry Received!
+    
+    Customer Email: ${email}
+    
+    Message Details:
+    "${message}"
+    
+    Thank you for choosing Ashwa Oil Company. 🛢️
+    We appreciate your business and will respond promptly. ✅
+    `
   };
 
   try {
